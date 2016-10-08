@@ -1,7 +1,192 @@
-doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='css/flatly.bootstrap.css')
+    | &#x9;
+    link(rel='stylesheet', href='css/flatly.style.css')
+    // Latest compiled and minified JavaScript
+    script(src='js/jquery-3.1.1.min.js')
+    | &#x9;
+    script(src='js/bootstrap.js')
   body
-    block content
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |         
+            span.icon-bar
+            |         
+            span.icon-bar
+            |         
+            span.icon-bar
+          |       
+          img(src='img/iceCream.png', width='66px', height='66px')
+        |     
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#')
+                | Link 
+                span.sr-only (current)
+            |         
+            li
+              a(href='#') Link
+            |         
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | Dropdown 
+                span.caret
+              |           
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Events
+                |             
+                li
+                  a(href='#') Local
+                |             
+                li
+                  a(href='#') International
+                |             
+                li.divider
+                |             
+                li
+                  a(href='#') Separated link
+                |             
+                li.divider
+                |             
+                li
+                  a(href='#') One more separated link
+          |       
+          form.navbar-form.navbar-left(role='search')
+            .form-group
+              input.form-control(type='text', placeholder='Search')
+            |         
+            button.btn.btn-default(type='submit') Submit
+          |    
+          |       
+          ul.nav.navbar-nav.navbar-right
+            li#navList
+              ul.nav.nav-pills
+                li.active
+                  a(href='#') Home
+                | &#x9;&#x9;  
+                li
+                  a(href='#') Profile
+                | &#x9;&#x9;  
+                li.disabled
+                  a(href='#') Disabled
+                | &#x9;&#x9;  
+                li.dropdown
+                  a.dropdown-toggle(data-toggle='dropdown', href='#')
+                    | Dropdown 
+                    span.caret
+                  | &#x9;&#x9;    
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Action
+                    | &#x9;&#x9;      
+                    li
+                      a(href='#') Another action
+                    | &#x9;&#x9;      
+                    li
+                      a(href='#') Something else here
+                    | &#x9;&#x9;      
+                    li.divider
+                    | &#x9;&#x9;      
+                    li
+                      a(href='#') Separated link
+            //
+              <ul class="nav nav-pills">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li> <img src="img/iceCream.png" width="66px" height="66px"></li>
+              <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Dropdown <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              </ul>
+              </li>
+              </ul>
+    | &#x9;
+    .container-fluid
+      h1
+      | &#x9;&#x9;
+      h2
+      | &#x9;&#x9;
+      h3
+      | &#x9;&#x9;
+      blockquote I am quote left
+      | &#x9;&#x9;
+      blockquote.blockquote-reverse I am quote right
+      // tool tip
+      p
+        | The 
+        abbr(title='United Nations') Un
+        |  connects the world
+      | &#x9;&#x9;
+      mark This is the mark
+      | &#x9;&#x9;
+      dl
+        dt Newspaper
+        // dt is bold
+        dd The Newspaper must have some interesting news
+        // dd is regular
+        dt Interest
+        | &#x9;&#x9;&#x9;
+        dd The internet is the biggest sources to access the information
+      | &#x9;&#x9;
+      dl.dl-horizontal
+        dt Newspaper
+        // dt is bold
+        dd The Newspaper must have some interesting news
+        // dd is regular
+        dt Interest
+        | &#x9;&#x9;&#x9;
+        dd The internet is the biggest sources to access the information
+      | &#x9;&#x9;
+      pre.
+        \n\t\t\tThis is          a      lon space paragraph.
+        \t\t\t\t\tThe new line      has done 
+        \t\t        
+      | &#x9;&#x9;
+      pre.
+        \n\t\t\t        
+        \t\t\t        
+        \t\t\t        
+        \t\t        
+      | &#x9;&#x9;
+      p.text-success This is simple paragraph
+      | &#x9;&#x9;
+      p.text-danger This is simple paragraph
+      | &#x9;&#x9;
+      p.text-info This is simple paragraph
+      | &#x9;&#x9;
+      p.text-primary This is simple paragraph
+      | &#x9;&#x9;
+      p.text-muted This is simple paragraph
+      | &#x9;&#x9;
+      p.text-warning This is simple paragraph
+      | &#x9;&#x9;
+      p.text-warning.bg-warning This is simple paragraph
+      | &#x9;&#x9;
+      p.lead This is simple paragraph
+      | &#x9;&#x9;
+      p.small This is simple paragraph
+      | &#x9;&#x9;
+      p.text-right This is simple paragraph
+      | &#x9;&#x9;
+      p.small This is simple paragraph
+      | &#x9;&#x9;
+      p.text-uppercase This is simple paragraph
+      | &#x9;&#x9;
+      p.text-lowercase This is simple paragraph
+
